@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Form from "../components/Form";
 import TextInput from "../components/TextInput";
@@ -25,7 +26,7 @@ const Login = () => {
 			</Button>
 
 			<div className='info'>
-				Don't have an account? <a href='/signup'>Signup</a> instead.
+				Don't have an account? <Link to='/signup'>Signup</Link> instead.
 			</div>
 		</Form>
 	);

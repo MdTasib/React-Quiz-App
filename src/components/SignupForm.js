@@ -4,6 +4,7 @@ import Checkbox from "./Checkbox";
 import Form from "./Form";
 import TextInput from "./TextInput";
 import classes from "../styles/Signup.module.css";
+import { Link } from "react-router-dom";
 
 const SignupForm = () => {
 	return (
@@ -26,7 +27,7 @@ const SignupForm = () => {
 			</Button>
 
 			<div class='info'>
-				Already have an account? <a href='login.html'>Login</a> instead.
+				Already have an account? <Link to='/login'>Login</Link> instead.
 			</div>
 		</Form>
 	);
