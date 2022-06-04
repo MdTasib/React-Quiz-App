@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, useEffect, useContext, createContext } from "react";
 import "../firebase";
 import {
 	getAuth,
@@ -8,7 +8,6 @@ import {
 	updateProfile,
 	onAuthStateChanged,
 } from "firebase/auth";
-import { useEffect } from "react/cjs/react.production.min";
 
 const AuthContext = createContext();
 
